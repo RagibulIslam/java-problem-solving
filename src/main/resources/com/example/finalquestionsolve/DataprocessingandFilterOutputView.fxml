@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10" fx:controller="controller.Scene2Controller">
+    <HBox spacing="10">
+        <Label text="Filter by Vehicle Type:" />
+        <ComboBox fx:id="vehicleTypeComboBox" />
+    </HBox>
+
+    <TableView fx:id="vehicleTable" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn text="Registration No" fx:id="regNoColumn" />
+            <TableColumn text="Model" fx:id="modelColumn" />
+            <TableColumn text="Manufacturer" fx:id="manufacturerColumn" />
+            <TableColumn text="Vehicle Type" fx:id="vehicleTypeColumn" />
+        </columns>
+    </TableView>
+
+    <Button text="Switch to Scene 1" onAction="#switchToScene1" />
+</VBox>

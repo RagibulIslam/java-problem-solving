@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="420.0" prefWidth="339.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.Scene1Controller">
+    <!-- Title Section -->
+    <top>
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Vehicle Data Creation" BorderPane.alignment="CENTER" />
+    </top>
+
+    <!-- Input Form Section -->
+    <center>
+        <VBox alignment="CENTER" prefHeight="297.0" prefWidth="349.0" spacing="10">
+            <HBox spacing="10">
+                <Label text="Model:" />
+                <TextField fx:id="modelField" promptText="Enter model" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Vehicle Type:" />
+                <TextField fx:id="vehicleTypeField" promptText="Enter vehicle type" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Make Year:" />
+                <TextField fx:id="makeYearField" promptText="Enter make year" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Import Price:" />
+                <TextField fx:id="importPriceField" promptText="Enter import price" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="CC:" />
+                <TextField fx:id="ccField" promptText="Enter CC" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Seat Capacity:" />
+                <TextField fx:id="seatCapacityField" promptText="Enter seat capacity" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Is Electric:" />
+                <CheckBox fx:id="isElectricCheckBox" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Manufacturer:" />
+                <TextField fx:id="manufacturerField" promptText="Enter manufacturer" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Registration No:" />
+                <TextField fx:id="regNoField" promptText="Enter registration number" />
+            </HBox>
+        </VBox>
+    </center>
+
+    <!-- Button Section -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER">
+            <Button onAction="#addVehicle" text="Add Vehicle" />
+            <Button onAction="#switchToScene2" text="Switch to Scene 2" />
+        </HBox>
+    </bottom>
+</BorderPane>
