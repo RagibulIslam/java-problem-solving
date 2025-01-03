@@ -64,15 +64,12 @@ public class DataCraetionToFileViewController {
             
 
 
-        }catch (Exception e){
-            showAlert("Error", "Invalid input or error saving vehicle!");
-
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
 
-
-
-   }
+    }
     private void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
