@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.Button?>
-<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10" fx:controller="controller.Scene2Controller">
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10" fx:controller="com.example.finalquestionsolve.DataprocessingandFilterOutPutViewCOmtroller">
     <HBox spacing="10">
         <Label text="Filter by Vehicle Type:" />
         <ComboBox fx:id="vehicleTypeComboBox" />

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="420.0" prefWidth="339.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.Scene1Controller">
+<BorderPane prefHeight="420.0" prefWidth="339.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.finalquestionsolve.DataCraetionToFileViewController">
     <!-- Title Section -->
     <top>
         <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Vehicle Data Creation" BorderPane.alignment="CENTER" />
